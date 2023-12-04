@@ -1,0 +1,35 @@
+.btn-iniciarSesion {
+    width: 7.902rem;
+    height: 35.17px;
+    padding: 8.37px, 16.75px, 8.37px, 16.75px;
+    border-radius: 6.7px;
+    border: none;
+    gap: 6.7px;
+    background-color: #1352F1;
+    cursor: pointer;
+
+    &__letras {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #FFFFFF;
+        
+    }
+}
+
+
+@media only screen and (max-width: 570px) {
+    .btn-iniciarSesion {
+        width: 16.317rem;
+        height: 34px;
+        padding: 5.63px, 11.27px, 5.63px, 11.27px;
+        border-radius: 4.51px;
+        gap: 4.51px;
+    }
+}

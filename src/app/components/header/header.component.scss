@@ -1,0 +1,17 @@
+.title {
+    width: 100vw;
+
+    &__logo {
+        width: 11.688rem;
+        height: 48,92px;
+        margin-top: 140px;
+        margin-left: 11.853rem;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .title__logo {
+        margin-left: 1.489rem;
+        margin-top: 56.9px;
+    }
+}

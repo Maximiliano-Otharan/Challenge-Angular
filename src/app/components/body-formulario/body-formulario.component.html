@@ -1,0 +1,22 @@
+<article class="conteiner">
+  <form action="" method="" class="conteiner__form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
+    <div class="conteiner__form__input-1">
+      <label for="email" class="conteiner__form__input-1__inputLabel">Email*</label>
+      <input type="text" id="email" name="email" class="conteiner__form__input-1__inputText" placeholder="Ingrese su email" ngModel required>
+      <p [ngClass]="{'conteiner__form__input-1__emailNull': cambioEmail, 'conteiner__form__input-1__emailNullObservable': !cambioEmail}">Este campo es requerido</p>
+    </div>
+    
+    <div class="conteiner__form__input-2">
+      <label for="contraseña" class="conteiner__form__input-2__inputLabel">Contraseña*</label>
+      <input type="contraseña" id="contraseña" name="contraseña" class="conteiner__form__input-2__inputText" placeholder="Ingrese su contraseña" ngModel required>
+      <p [ngClass]="{'conteiner__form__input-2__contraseñaNull': cambioContrasenia, 'conteiner__form__input-2__contraseñaNullObservable': !cambioContrasenia}">Este campo es requerido</p>
+    </div>
+    
+    <div class="conteiner__form__btns">
+      <app-btn-registrarse class="conteiner__form__btns__btn-registrarse"/>
+      <app-btn-iniciar-sesion/>
+    </div>
+    
+  </form>
+</article>

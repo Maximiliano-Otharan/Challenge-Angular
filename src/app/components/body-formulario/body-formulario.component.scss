@@ -1,0 +1,126 @@
+.conteiner {
+    width: 34.313rem;
+    height: 23.75rem;
+    border-radius: 13.4px;
+    background-color: #FFFFFF;
+    margin-right: 78px;
+
+    &__form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+
+        &__input-1, &__input-2 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            &__inputLabel {
+                width: 1.875rem;
+                height: 7px;
+                font-family: 'Nunito', sans-serif;
+                font-size: 10px;
+                font-weight: 500;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #696969;
+            }
+
+            &__inputText {
+                width: 22.345rem;
+                height: 43.54px;
+                margin-top: 18.72px;
+                border-radius: 5.02px;
+                border: 0.84px solid #000000;
+                color: #000000;
+                padding-left: 16.59px;
+            }
+
+            &__emailNull, &__contraseñaNull {
+                display: none;
+            }
+    
+            &__emailNullObservable, &__contraseñaNullObservable {
+                width: 100%;
+                height: 7px;
+                font-family: 'Nunito', sans-serif;
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #FF0000;
+                position: absolute;
+                top: 65px;
+            }
+        }
+
+        &__input-2 {
+            margin-top: 30px;
+        }
+
+        &__btns {
+            width: 23.631rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 29.2px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .conteiner {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .conteiner {
+        width: 18.118rem;
+        height: 330.74px;
+        border-radius: 9.01px;
+
+        &__form {
+
+            &__input-1, &__input-2{
+
+                &__inputLabel {
+                    width: 0.102rem;
+                    height: 6px;
+                    font-size: 9px;
+                    line-height: 11px;
+                }
+
+                &__inputText {
+                    width: 15.032rem;
+                    height: 34px;
+                    margin-top: 16.2px;
+                    border-radius: 3.38px;
+                    border: 0.56px solid 000000;
+                }
+        
+                &__emailNullObservable, &__contraseñaNullObservable {
+                    position: absolute;
+                    top: 52px;
+                }
+            }
+
+            &__btns {
+                width: 16.317rem;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: flex-start;
+
+                &__btn-registrarse {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}

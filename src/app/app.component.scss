@@ -1,0 +1,31 @@
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner {
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-color: #041643;
+    background-image: url('../assets/Images-Background/gradient.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    @include flexbox();
+    flex-direction: column;
+
+        &__body {
+            width: 100%;
+            @include flexbox();
+            margin-bottom: 190px;
+        }
+}
+
+@media only screen and (max-width: 1020px) {
+    .conteiner__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

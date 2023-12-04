@@ -1,0 +1,61 @@
+.texto-bienvenida {
+    margin-left: 178px;
+    font-family: 'Nunito', sans-serif;
+    
+    &__titulo {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    }
+
+    &__parrafo {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #AFAFAF;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .texto-bienvenida {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__titulo {
+            margin-bottom: 0;
+        }
+
+        &__parrafo {
+            margin-top: 0;
+            margin-bottom: 42px;
+        }
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .texto-bienvenida {
+
+        &__titulo {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+
+        }
+
+        &__parrafo {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 13px;
+            text-align: center;
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+.btn-registrarse {
+    width: 9.875rem;
+    height: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #4E4E4E;
+}
+
+@media only screen and (max-width: 570px) {
+    .btn-registrarse {
+        width: 8.438rem;
+        height: 7px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
